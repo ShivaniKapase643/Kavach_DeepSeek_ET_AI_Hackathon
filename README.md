@@ -27,6 +27,10 @@ It ships with two tools:
 - **Triage** (`/triage`) — a point-in-time checker for a suspicious SMS, screenshot, or call
   recording, returning a verdict, red flags, next steps, and a ready-to-file cybercrime complaint.
 
+### Live call flow
+
+![Kavach live call flow — a four-step pipeline: Listen, Transcribe, Classify, Interrupt](Img/flow-diagram.png)
+
 ## What is built vs. roadmap
 
 **Built today (Phase 1):**
@@ -46,6 +50,10 @@ It ships with two tools:
   and the 1930 helpline, and a bank-side transaction circuit breaker triggered by the live risk
   score.
 
+### Architecture
+
+![Kavach system architecture — browser client, Next.js server route handlers, and external ElevenLabs/Gemini APIs, with all API keys kept server-side](Img/architecture-diagram.png)
+
 See [ARCHITECTURE.md](ARCHITECTURE.md) for the full pipeline diagram and scoring rules, and
 [DEMO_VIDEO_SCRIPT.md](DEMO_VIDEO_SCRIPT.md) for the 2.5-minute demo runbook.
 
@@ -62,6 +70,8 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000).
 
 ## Tech stack
+
+![Kavach tech stack — Next.js 14, TypeScript, Tailwind CSS, Framer Motion, lucide-react, Google Gemini, ElevenLabs, deployed on Vercel](Img/tech-stack-diagram.png)
 
 - **Next.js 14** (App Router) + **TypeScript**, deployable to Vercel with zero config
 - **Tailwind CSS** — custom cyber-defence design system (dark command-console palette)
